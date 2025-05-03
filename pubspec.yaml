@@ -1,0 +1,39 @@
+name: thermal_anomaly_detector
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  image_picker: ^1.1.2
+  file_picker: ^10.1.2
+  path_provider: ^2.1.5
+  image: ^4.0.17
+  permission_handler: ^12.0.0+1
+  provider: ^6.0.5
+  shared_preferences: ^2.1.1
+  dio: ^5.1.2
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.14.3
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/drone_thermal_icon.png
+
+# 🔥 Place this OUTSIDE the flutter block!
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/drone_thermal_icon.png"
