@@ -5,7 +5,7 @@ import 'package:thermal_anomaly_detector/pages/detail_page.dart';
 class ResultsPage extends StatelessWidget {
   final List<AnalysisResult> results;
 
-  const ResultsPage({Key? key, required this.results}) : super(key: key);
+  const ResultsPage({super.key, required this.results});
 
   @override
   Widget build(BuildContext context) {

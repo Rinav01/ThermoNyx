@@ -7,7 +7,7 @@ void main() {
 }
 
 class AnomalyDetectionApp extends StatelessWidget {
-  const AnomalyDetectionApp({Key? key}) : super(key: key);
+  const AnomalyDetectionApp({super.key});
 
   @override
   Widget build(BuildContext context) {

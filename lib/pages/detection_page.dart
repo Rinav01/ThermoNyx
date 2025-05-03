@@ -7,7 +7,7 @@ import 'package:thermal_anomaly_detector/main.dart';
 import 'package:thermal_anomaly_detector/pages/result_page.dart';
 
 class DetectionPage extends StatefulWidget {
-  const DetectionPage({Key? key}) : super(key: key);
+  const DetectionPage({super.key});
 
   @override
   _DetectionPageState createState() => _DetectionPageState();
@@ -22,7 +22,7 @@ class _DetectionPageState extends State<DetectionPage> {
 
   Future<void> _pickImagesFromGallery() async {
     try {
-      final List<XFile>? pickedFiles = await _picker.pickMultiImage();
+      final List<XFile> pickedFiles = await _picker.pickMultiImage();
       if (pickedFiles != null && pickedFiles.isNotEmpty) {
         setState(() {
           _selectedImages = pickedFiles.map((file) => File(file.path)).toList();
